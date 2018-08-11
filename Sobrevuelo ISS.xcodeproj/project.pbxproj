@@ -7,24 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2885FC7046A1DBC4BFA5D150 /* Pods_Sobrevuelo_ISSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408E76398B5A4E48A55B5A61 /* Pods_Sobrevuelo_ISSTests.framework */; };
+		5038F652059D22E3631A8A15 /* Pods_Sobrevuelo_ISSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EE1C2F91CC93CDF876878 /* Pods_Sobrevuelo_ISSUITests.framework */; };
+		6459D9A3211DD4C7004376A0 /* ISS_Avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6459D99B211DD4C7004376A0 /* ISS_Avatar@2x.png */; };
+		6459D9A4211DD4C7004376A0 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6459D99C211DD4C7004376A0 /* arrow@2x.png */; };
+		6459D9A5211DD4C7004376A0 /* ISS_Avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6459D99E211DD4C7004376A0 /* ISS_Avatar@3x.png */; };
+		6459D9A6211DD4C7004376A0 /* arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6459D99F211DD4C7004376A0 /* arrow@3x.png */; };
+		6459D9A7211DD4C7004376A0 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6459D9A1211DD4C7004376A0 /* arrow.png */; };
+		6459D9A8211DD4C7004376A0 /* ISS_Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6459D9A2211DD4C7004376A0 /* ISS_Avatar.png */; };
+		6459D9AC211DD54C004376A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6459D9AB211DD54C004376A0 /* LaunchScreen.storyboard */; };
+		6459D9D1211DD5A5004376A0 /* APIDataSourceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9B7211DD5A5004376A0 /* APIDataSourceImp.m */; };
+		6459D9D2211DD5A5004376A0 /* LocationLibraryWrapperImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9BC211DD5A5004376A0 /* LocationLibraryWrapperImp.m */; };
+		6459D9D3211DD5A5004376A0 /* NSError+DeviceLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9C5211DD5A5004376A0 /* NSError+DeviceLocation.m */; };
+		6459D9D4211DD5A5004376A0 /* DeviceLocationImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9C7211DD5A5004376A0 /* DeviceLocationImp.m */; };
+		6459D9D5211DD5A5004376A0 /* DeviceDataSourceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9C8211DD5A5004376A0 /* DeviceDataSourceImp.m */; };
+		6459D9D6211DD5A5004376A0 /* JSONSerializerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9CE211DD5A5004376A0 /* JSONSerializerImp.m */; };
+		6459D9EF211DD5AB004376A0 /* BackgrondExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9DA211DD5AB004376A0 /* BackgrondExecutor.m */; };
+		6459D9F0211DD5AB004376A0 /* MainThreadImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459D9DB211DD5AB004376A0 /* MainThreadImpl.m */; };
+		6459DA05211DD5B7004376A0 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA01211DD5B7004376A0 /* BasePresenter.m */; };
+		6459DA21211DD5CA004376A0 /* ActivityLogViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA13211DD5CA004376A0 /* ActivityLogViewCell.m */; };
+		6459DA22211DD5CA004376A0 /* ActivityLogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6459DA14211DD5CA004376A0 /* ActivityLogViewCell.xib */; };
+		6459DA25211DD5CA004376A0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA19211DD5CA004376A0 /* BaseViewController.m */; };
+		6459DA30211DDD86004376A0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA2D211DDD86004376A0 /* MainViewController.m */; };
+		6459DA39211DDE99004376A0 /* MainPresenterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA37211DDE99004376A0 /* MainPresenterImp.m */; };
+		6459DA40211DE194004376A0 /* MainThreadWithNoDispatchAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA3D211DE193004376A0 /* MainThreadWithNoDispatchAsync.m */; };
+		6459DA41211DE194004376A0 /* MainThreadExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA3E211DE193004376A0 /* MainThreadExecutor.m */; };
+		6459DA44211DE206004376A0 /* Overflight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA43211DE205004376A0 /* Overflight.m */; };
+		6459DA48211DE482004376A0 /* OverflightRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA46211DE482004376A0 /* OverflightRequest.m */; };
+		6459DA4C211DE86E004376A0 /* ServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA4B211DE86E004376A0 /* ServiceLocator.m */; };
+		6459DA4F211DE9D5004376A0 /* NSError+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DA4E211DE9D4004376A0 /* NSError+DataSource.m */; };
+		6459DBBC211DEC73004376A0 /* OverflightJSONParseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBBB211DEC72004376A0 /* OverflightJSONParseSpec.m */; };
+		6459DBC1211DED6A004376A0 /* DeviceModelNameImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBC0211DED6A004376A0 /* DeviceModelNameImp.m */; };
+		6459DBC8211DEDD1004376A0 /* Request+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBC3211DEDD1004376A0 /* Request+AppInfo.m */; };
+		6459DBC9211DEDD1004376A0 /* Request+Autenticated.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBC4211DEDD1004376A0 /* Request+Autenticated.m */; };
+		6459DBCA211DEDD1004376A0 /* Request+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBC6211DEDD1004376A0 /* Request+Gzip.m */; };
+		6459DBCF211DEE0A004376A0 /* Base64EncoderImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBCC211DEE0A004376A0 /* Base64EncoderImp.m */; };
+		6459DBD4211DEE3E004376A0 /* AppDataSourceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBD2211DEE3E004376A0 /* AppDataSourceImp.m */; };
+		6459DBD8211DEF04004376A0 /* LoaderMockedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBD6211DEF04004376A0 /* LoaderMockedResponse.m */; };
+		6459DBE2211DEFC2004376A0 /* UIViewController+WaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBDB211DEFC2004376A0 /* UIViewController+WaitView.m */; };
+		6459DBE3211DEFC2004376A0 /* UIViewController+ModalWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBDC211DEFC2004376A0 /* UIViewController+ModalWaitView.m */; };
+		6459DBE4211DEFC2004376A0 /* ModalWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBDE211DEFC2004376A0 /* ModalWaitView.m */; };
+		6459DBE5211DEFC2004376A0 /* SpinWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBDF211DEFC2004376A0 /* SpinWaitView.m */; };
+		6459DBE8211DF044004376A0 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBE7211DF044004376A0 /* Location.m */; };
+		6459DBEC211DF117004376A0 /* Transformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBEA211DF117004376A0 /* Transformer.m */; };
+		6459DBF1211DF15D004376A0 /* BaseInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBEF211DF15D004376A0 /* BaseInteractor.m */; };
+		6459DBF4211DF18D004376A0 /* LocationWithAccuracy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBF3211DF18D004376A0 /* LocationWithAccuracy.m */; };
+		6459DBF9211DF1D2004376A0 /* NSError+BaseInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBF7211DF1D2004376A0 /* NSError+BaseInteractor.m */; };
+		6459DBFE211DF28C004376A0 /* NSError+Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DBFB211DF28C004376A0 /* NSError+Repository.m */; };
+		6459DC03211DF4E8004376A0 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DC02211DF4E8004376A0 /* Validator.m */; };
+		6459DC09211DF59E004376A0 /* ErrorTranslaterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DC06211DF59D004376A0 /* ErrorTranslaterImp.m */; };
+		6459DC0E211DF756004376A0 /* OverflightViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DC0D211DF756004376A0 /* OverflightViewModel.m */; };
+		6459DC13211EEE6E004376A0 /* OverflightsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DC10211EEE6E004376A0 /* OverflightsInteractor.m */; };
+		6459DC17211EF000004376A0 /* OverflightsRepositoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DC15211EF000004376A0 /* OverflightsRepositoryImp.m */; };
+		6459DC1A211EF18B004376A0 /* OverflightValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6459DC18211EF18B004376A0 /* OverflightValidator.m */; };
+		6459DC1C211EF636004376A0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6459DC1B211EF636004376A0 /* MainViewController.xib */; };
+		64FFDE2A211F261300F64221 /* MessageViewImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE27211F261300F64221 /* MessageViewImp.m */; };
+		64FFDE2B211F261300F64221 /* MessageViewAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE28211F261300F64221 /* MessageViewAction.m */; };
+		64FFDE2F211F2C1200F64221 /* OverflightsParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE2E211F2C1200F64221 /* OverflightsParse.m */; };
+		64FFDE32211F30BF00F64221 /* OverflightResponseJSONSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE31211F30BF00F64221 /* OverflightResponseJSONSpec.m */; };
+		64FFDE38211F3C9B00F64221 /* DateFormaterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE35211F3C9B00F64221 /* DateFormaterImp.m */; };
+		64FFDE3D211F3D0700F64221 /* SupportedLocaleImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE3A211F3D0700F64221 /* SupportedLocaleImp.m */; };
 		9A37C32A1C1F671F00C4435C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C3291C1F671F00C4435C /* main.m */; };
 		9A37C32D1C1F671F00C4435C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C32C1C1F671F00C4435C /* AppDelegate.m */; };
 		9A37C3351C1F671F00C4435C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3341C1F671F00C4435C /* Assets.xcassets */; };
-		9A37C3381C1F671F00C4435C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3361C1F671F00C4435C /* LaunchScreen.storyboard */; };
 		9A37C3431C1F671F00C4435C /* Sobrevuelo_ISSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C3421C1F671F00C4435C /* Sobrevuelo_ISSTests.m */; };
 		9A37C34E1C1F671F00C4435C /* Sobrevuelo_ISSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C34D1C1F671F00C4435C /* Sobrevuelo_ISSUITests.m */; };
 		9A37C35D1C1F811B00C4435C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A37C35C1C1F811B00C4435C /* CoreLocation.framework */; };
-		9A37C3841C23496500C4435C /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C3831C23496500C4435C /* LocationManager.m */; };
-		9A37C3871C23498500C4435C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3861C23498500C4435C /* Main.storyboard */; };
-		9A37C38C1C2349A300C4435C /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C3891C2349A300C4435C /* DetailsViewController.m */; };
-		9A37C38D1C2349A300C4435C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C38B1C2349A300C4435C /* ViewController.m */; };
-		9A37C3901C2349B400C4435C /* PassEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C38F1C2349B400C4435C /* PassEntity.m */; };
-		9A37C3941C2349D600C4435C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3911C2349D600C4435C /* arrow.png */; };
-		9A37C3951C2349D600C4435C /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3921C2349D600C4435C /* arrow@2x.png */; };
-		9A37C3961C2349D600C4435C /* arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3931C2349D600C4435C /* arrow@3x.png */; };
-		9A37C39A1C2349E200C4435C /* ISS_Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3971C2349E200C4435C /* ISS_Avatar.png */; };
-		9A37C39B1C2349E200C4435C /* ISS_Avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3981C2349E200C4435C /* ISS_Avatar@2x.png */; };
-		9A37C39C1C2349E200C4435C /* ISS_Avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3991C2349E200C4435C /* ISS_Avatar@3x.png */; };
+		FE1F50AE893B1F51FCDF4ACB /* Pods_Sobrevuelo_ISS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E6F06719695E7862C94A9F /* Pods_Sobrevuelo_ISS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +94,151 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DE7E7099F84BDD92FB6E64C /* Pods-Sobrevuelo ISS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISS/Pods-Sobrevuelo ISS.debug.xcconfig"; sourceTree = "<group>"; };
+		0EA784C8DF29DEF9D38D6C11 /* Pods-Sobrevuelo ISSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISSTests/Pods-Sobrevuelo ISSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		408E76398B5A4E48A55B5A61 /* Pods_Sobrevuelo_ISSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sobrevuelo_ISSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6459D99B211DD4C7004376A0 /* ISS_Avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ISS_Avatar@2x.png"; sourceTree = "<group>"; };
+		6459D99C211DD4C7004376A0 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		6459D99E211DD4C7004376A0 /* ISS_Avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ISS_Avatar@3x.png"; sourceTree = "<group>"; };
+		6459D99F211DD4C7004376A0 /* arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@3x.png"; sourceTree = "<group>"; };
+		6459D9A1211DD4C7004376A0 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		6459D9A2211DD4C7004376A0 /* ISS_Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISS_Avatar.png; sourceTree = "<group>"; };
+		6459D9AB211DD54C004376A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6459D9B0211DD5A5004376A0 /* APIServerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIServerInfo.h; sourceTree = "<group>"; };
+		6459D9B1211DD5A5004376A0 /* APIDataSourceImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDataSourceImp.h; sourceTree = "<group>"; };
+		6459D9B2211DD5A5004376A0 /* APIDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDataSource.h; sourceTree = "<group>"; };
+		6459D9B7211DD5A5004376A0 /* APIDataSourceImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIDataSourceImp.m; sourceTree = "<group>"; };
+		6459D9B9211DD5A5004376A0 /* DeviceDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataSource.h; sourceTree = "<group>"; };
+		6459D9BC211DD5A5004376A0 /* LocationLibraryWrapperImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationLibraryWrapperImp.m; sourceTree = "<group>"; };
+		6459D9BD211DD5A5004376A0 /* LocationLibraryWrapperImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationLibraryWrapperImp.h; sourceTree = "<group>"; };
+		6459D9BF211DD5A5004376A0 /* LocationLibraryWrapperErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationLibraryWrapperErrors.h; sourceTree = "<group>"; };
+		6459D9C0211DD5A5004376A0 /* DeviceLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLocation.h; sourceTree = "<group>"; };
+		6459D9C1211DD5A5004376A0 /* DeviceLocationImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLocationImp.h; sourceTree = "<group>"; };
+		6459D9C2211DD5A5004376A0 /* LocationLibraryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationLibraryWrapper.h; sourceTree = "<group>"; };
+		6459D9C4211DD5A5004376A0 /* NSError+DeviceLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DeviceLocation.h"; sourceTree = "<group>"; };
+		6459D9C5211DD5A5004376A0 /* NSError+DeviceLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DeviceLocation.m"; sourceTree = "<group>"; };
+		6459D9C6211DD5A5004376A0 /* DeviceLocationErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceLocationErrors.h; sourceTree = "<group>"; };
+		6459D9C7211DD5A5004376A0 /* DeviceLocationImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceLocationImp.m; sourceTree = "<group>"; };
+		6459D9C8211DD5A5004376A0 /* DeviceDataSourceImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataSourceImp.m; sourceTree = "<group>"; };
+		6459D9C9211DD5A5004376A0 /* DeviceDataSourceImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataSourceImp.h; sourceTree = "<group>"; };
+		6459D9CB211DD5A5004376A0 /* DataSourceErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceErrors.h; sourceTree = "<group>"; };
+		6459D9CD211DD5A5004376A0 /* JSONSerializerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSerializerImp.h; sourceTree = "<group>"; };
+		6459D9CE211DD5A5004376A0 /* JSONSerializerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONSerializerImp.m; sourceTree = "<group>"; };
+		6459D9CF211DD5A5004376A0 /* JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSerializer.h; sourceTree = "<group>"; };
+		6459D9D9211DD5AB004376A0 /* Interactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactor.h; sourceTree = "<group>"; };
+		6459D9DA211DD5AB004376A0 /* BackgrondExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgrondExecutor.m; sourceTree = "<group>"; };
+		6459D9DB211DD5AB004376A0 /* MainThreadImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainThreadImpl.m; sourceTree = "<group>"; };
+		6459D9DC211DD5AB004376A0 /* Executor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Executor.h; sourceTree = "<group>"; };
+		6459D9DD211DD5AB004376A0 /* MainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainThread.h; sourceTree = "<group>"; };
+		6459D9DE211DD5AB004376A0 /* BackgrondExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgrondExecutor.h; sourceTree = "<group>"; };
+		6459D9DF211DD5AB004376A0 /* MainThreadImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainThreadImpl.h; sourceTree = "<group>"; };
+		6459D9F7211DD5B7004376A0 /* BasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresenter.h; sourceTree = "<group>"; };
+		6459DA01211DD5B7004376A0 /* BasePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePresenter.m; sourceTree = "<group>"; };
+		6459DA13211DD5CA004376A0 /* ActivityLogViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityLogViewCell.m; sourceTree = "<group>"; };
+		6459DA14211DD5CA004376A0 /* ActivityLogViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityLogViewCell.xib; sourceTree = "<group>"; };
+		6459DA17211DD5CA004376A0 /* ActivityLogViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityLogViewCell.h; sourceTree = "<group>"; };
+		6459DA19211DD5CA004376A0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6459DA1F211DD5CA004376A0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6459DA2D211DDD86004376A0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6459DA2E211DDD86004376A0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6459DA35211DDE99004376A0 /* MainPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenter.h; sourceTree = "<group>"; };
+		6459DA36211DDE99004376A0 /* MainPresenterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenterImp.h; sourceTree = "<group>"; };
+		6459DA37211DDE99004376A0 /* MainPresenterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPresenterImp.m; sourceTree = "<group>"; };
+		6459DA3A211DDFE4004376A0 /* WaitForTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitForTask.h; sourceTree = "<group>"; };
+		6459DA3C211DE193004376A0 /* MainThreadExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainThreadExecutor.h; sourceTree = "<group>"; };
+		6459DA3D211DE193004376A0 /* MainThreadWithNoDispatchAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainThreadWithNoDispatchAsync.m; sourceTree = "<group>"; };
+		6459DA3E211DE193004376A0 /* MainThreadExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainThreadExecutor.m; sourceTree = "<group>"; };
+		6459DA3F211DE193004376A0 /* MainThreadWithNoDispatchAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainThreadWithNoDispatchAsync.h; sourceTree = "<group>"; };
+		6459DA42211DE205004376A0 /* Overflight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Overflight.h; sourceTree = "<group>"; };
+		6459DA43211DE205004376A0 /* Overflight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Overflight.m; sourceTree = "<group>"; };
+		6459DA46211DE482004376A0 /* OverflightRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightRequest.m; sourceTree = "<group>"; };
+		6459DA47211DE482004376A0 /* OverflightRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightRequest.h; sourceTree = "<group>"; };
+		6459DA4A211DE86E004376A0 /* ServiceLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceLocator.h; sourceTree = "<group>"; };
+		6459DA4B211DE86E004376A0 /* ServiceLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceLocator.m; sourceTree = "<group>"; };
+		6459DA4D211DE9D4004376A0 /* NSError+DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DataSource.h"; sourceTree = "<group>"; };
+		6459DA4E211DE9D4004376A0 /* NSError+DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DataSource.m"; sourceTree = "<group>"; };
+		6459DBBA211DEC72004376A0 /* OverflightJSONParseSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightJSONParseSpec.h; sourceTree = "<group>"; };
+		6459DBBB211DEC72004376A0 /* OverflightJSONParseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightJSONParseSpec.m; sourceTree = "<group>"; };
+		6459DBBE211DED6A004376A0 /* DeviceModelName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModelName.h; sourceTree = "<group>"; };
+		6459DBBF211DED6A004376A0 /* DeviceModelNameImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModelNameImp.h; sourceTree = "<group>"; };
+		6459DBC0211DED6A004376A0 /* DeviceModelNameImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModelNameImp.m; sourceTree = "<group>"; };
+		6459DBC2211DEDD1004376A0 /* Request+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Request+AppInfo.h"; sourceTree = "<group>"; };
+		6459DBC3211DEDD1004376A0 /* Request+AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Request+AppInfo.m"; sourceTree = "<group>"; };
+		6459DBC4211DEDD1004376A0 /* Request+Autenticated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Request+Autenticated.m"; sourceTree = "<group>"; };
+		6459DBC5211DEDD1004376A0 /* Request+Gzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Request+Gzip.h"; sourceTree = "<group>"; };
+		6459DBC6211DEDD1004376A0 /* Request+Gzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Request+Gzip.m"; sourceTree = "<group>"; };
+		6459DBC7211DEDD1004376A0 /* Request+Autenticated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Request+Autenticated.h"; sourceTree = "<group>"; };
+		6459DBCC211DEE0A004376A0 /* Base64EncoderImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64EncoderImp.m; sourceTree = "<group>"; };
+		6459DBCD211DEE0A004376A0 /* Base64Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Encoder.h; sourceTree = "<group>"; };
+		6459DBCE211DEE0A004376A0 /* Base64EncoderImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64EncoderImp.h; sourceTree = "<group>"; };
+		6459DBD1211DEE3E004376A0 /* AppDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDataSource.h; sourceTree = "<group>"; };
+		6459DBD2211DEE3E004376A0 /* AppDataSourceImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDataSourceImp.m; sourceTree = "<group>"; };
+		6459DBD3211DEE3E004376A0 /* AppDataSourceImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDataSourceImp.h; sourceTree = "<group>"; };
+		6459DBD6211DEF04004376A0 /* LoaderMockedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderMockedResponse.m; sourceTree = "<group>"; };
+		6459DBD7211DEF04004376A0 /* LoaderMockedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderMockedResponse.h; sourceTree = "<group>"; };
+		6459DBDA211DEFC2004376A0 /* ModalWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalWaitView.h; sourceTree = "<group>"; };
+		6459DBDB211DEFC2004376A0 /* UIViewController+WaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WaitView.m"; sourceTree = "<group>"; };
+		6459DBDC211DEFC2004376A0 /* UIViewController+ModalWaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalWaitView.m"; sourceTree = "<group>"; };
+		6459DBDD211DEFC2004376A0 /* SpinWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinWaitView.h; sourceTree = "<group>"; };
+		6459DBDE211DEFC2004376A0 /* ModalWaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalWaitView.m; sourceTree = "<group>"; };
+		6459DBDF211DEFC2004376A0 /* SpinWaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinWaitView.m; sourceTree = "<group>"; };
+		6459DBE0211DEFC2004376A0 /* UIViewController+ModalWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalWaitView.h"; sourceTree = "<group>"; };
+		6459DBE1211DEFC2004376A0 /* UIViewController+WaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WaitView.h"; sourceTree = "<group>"; };
+		6459DBE6211DF044004376A0 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		6459DBE7211DF044004376A0 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		6459DBEA211DF117004376A0 /* Transformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transformer.m; sourceTree = "<group>"; };
+		6459DBEB211DF117004376A0 /* Transformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transformer.h; sourceTree = "<group>"; };
+		6459DBEE211DF15D004376A0 /* BaseInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInteractor.h; sourceTree = "<group>"; };
+		6459DBEF211DF15D004376A0 /* BaseInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInteractor.m; sourceTree = "<group>"; };
+		6459DBF0211DF15D004376A0 /* BaseInteractor+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseInteractor+Protected.h"; sourceTree = "<group>"; };
+		6459DBF2211DF18D004376A0 /* LocationWithAccuracy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationWithAccuracy.h; sourceTree = "<group>"; };
+		6459DBF3211DF18D004376A0 /* LocationWithAccuracy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationWithAccuracy.m; sourceTree = "<group>"; };
+		6459DBF6211DF1D2004376A0 /* NSError+BaseInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+BaseInteractor.h"; sourceTree = "<group>"; };
+		6459DBF7211DF1D2004376A0 /* NSError+BaseInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+BaseInteractor.m"; sourceTree = "<group>"; };
+		6459DBF8211DF1D2004376A0 /* InteractorErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractorErrors.h; sourceTree = "<group>"; };
+		6459DBFB211DF28C004376A0 /* NSError+Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Repository.m"; sourceTree = "<group>"; };
+		6459DBFC211DF28C004376A0 /* RepositoryErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryErrors.h; sourceTree = "<group>"; };
+		6459DBFD211DF28C004376A0 /* NSError+Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Repository.h"; sourceTree = "<group>"; };
+		6459DBFF211DF476004376A0 /* RepositoryValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryValidator.h; sourceTree = "<group>"; };
+		6459DC01211DF4E8004376A0 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		6459DC02211DF4E8004376A0 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
+		6459DC06211DF59D004376A0 /* ErrorTranslaterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorTranslaterImp.m; sourceTree = "<group>"; };
+		6459DC07211DF59D004376A0 /* ErrorTranslater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorTranslater.h; sourceTree = "<group>"; };
+		6459DC08211DF59D004376A0 /* ErrorTranslaterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorTranslaterImp.h; sourceTree = "<group>"; };
+		6459DC0A211DF656004376A0 /* MessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
+		6459DC0B211DF6A0004376A0 /* LifeCycleViewEventsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewEventsPresenter.h; sourceTree = "<group>"; };
+		6459DC0C211DF755004376A0 /* OverflightViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightViewModel.h; sourceTree = "<group>"; };
+		6459DC0D211DF756004376A0 /* OverflightViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightViewModel.m; sourceTree = "<group>"; };
+		6459DC10211EEE6E004376A0 /* OverflightsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightsInteractor.m; sourceTree = "<group>"; };
+		6459DC11211EEE6E004376A0 /* OverflightsUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightsUseCase.h; sourceTree = "<group>"; };
+		6459DC12211EEE6E004376A0 /* OverflightsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightsInteractor.h; sourceTree = "<group>"; };
+		6459DC14211EF000004376A0 /* OverflightsRepositoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightsRepositoryImp.h; sourceTree = "<group>"; };
+		6459DC15211EF000004376A0 /* OverflightsRepositoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightsRepositoryImp.m; sourceTree = "<group>"; };
+		6459DC16211EF000004376A0 /* OverflightsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightsRepository.h; sourceTree = "<group>"; };
+		6459DC18211EF18B004376A0 /* OverflightValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightValidator.m; sourceTree = "<group>"; };
+		6459DC19211EF18B004376A0 /* OverflightValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightValidator.h; sourceTree = "<group>"; };
+		6459DC1B211EF636004376A0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		64FFDE26211F261300F64221 /* MessageViewAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewAction.h; sourceTree = "<group>"; };
+		64FFDE27211F261300F64221 /* MessageViewImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewImp.m; sourceTree = "<group>"; };
+		64FFDE28211F261300F64221 /* MessageViewAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewAction.m; sourceTree = "<group>"; };
+		64FFDE29211F261300F64221 /* MessageViewImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewImp.h; sourceTree = "<group>"; };
+		64FFDE2D211F2C1200F64221 /* OverflightsParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightsParse.h; sourceTree = "<group>"; };
+		64FFDE2E211F2C1200F64221 /* OverflightsParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightsParse.m; sourceTree = "<group>"; };
+		64FFDE30211F30BF00F64221 /* OverflightResponseJSONSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflightResponseJSONSpec.h; sourceTree = "<group>"; };
+		64FFDE31211F30BF00F64221 /* OverflightResponseJSONSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflightResponseJSONSpec.m; sourceTree = "<group>"; };
+		64FFDE35211F3C9B00F64221 /* DateFormaterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormaterImp.m; sourceTree = "<group>"; };
+		64FFDE36211F3C9B00F64221 /* DateFormaterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormaterImp.h; sourceTree = "<group>"; };
+		64FFDE37211F3C9B00F64221 /* DateFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormater.h; sourceTree = "<group>"; };
+		64FFDE3A211F3D0700F64221 /* SupportedLocaleImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportedLocaleImp.m; sourceTree = "<group>"; };
+		64FFDE3B211F3D0700F64221 /* SupportedLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportedLocale.h; sourceTree = "<group>"; };
+		64FFDE3C211F3D0700F64221 /* SupportedLocaleImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportedLocaleImp.h; sourceTree = "<group>"; };
+		892206A9F3785894E4603A98 /* Pods-Sobrevuelo ISSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		95E6F06719695E7862C94A9F /* Pods_Sobrevuelo_ISS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sobrevuelo_ISS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A37C3251C1F671F00C4435C /* Sobrevuelo ISS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sobrevuelo ISS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A37C3291C1F671F00C4435C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A37C32B1C1F671F00C4435C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A37C32C1C1F671F00C4435C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A37C3341C1F671F00C4435C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9A37C3371C1F671F00C4435C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A37C3391C1F671F00C4435C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A37C33E1C1F671F00C4435C /* Sobrevuelo ISSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sobrevuelo ISSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A37C3421C1F671F00C4435C /* Sobrevuelo_ISSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sobrevuelo_ISSTests.m; sourceTree = "<group>"; };
@@ -59,22 +247,11 @@
 		9A37C34D1C1F671F00C4435C /* Sobrevuelo_ISSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sobrevuelo_ISSUITests.m; sourceTree = "<group>"; };
 		9A37C34F1C1F671F00C4435C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A37C35C1C1F811B00C4435C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		9A37C3821C23495600C4435C /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = Handlers/LocationManager.h; sourceTree = "<group>"; };
-		9A37C3831C23496500C4435C /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationManager.m; path = Handlers/LocationManager.m; sourceTree = "<group>"; };
 		9A37C3851C23497C00C4435C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Macros/Constants.h; sourceTree = "<group>"; };
-		9A37C3861C23498500C4435C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Views/Main.storyboard; sourceTree = "<group>"; };
-		9A37C3881C2349A300C4435C /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = Controllers/DetailsViewController.h; sourceTree = "<group>"; };
-		9A37C3891C2349A300C4435C /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = Controllers/DetailsViewController.m; sourceTree = "<group>"; };
-		9A37C38A1C2349A300C4435C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
-		9A37C38B1C2349A300C4435C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
-		9A37C38E1C2349B400C4435C /* PassEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassEntity.h; path = Entities/PassEntity.h; sourceTree = "<group>"; };
-		9A37C38F1C2349B400C4435C /* PassEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassEntity.m; path = Entities/PassEntity.m; sourceTree = "<group>"; };
-		9A37C3911C2349D600C4435C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = "Sobrevuelo ISS/Resources/arrow/arrow.png"; sourceTree = SOURCE_ROOT; };
-		9A37C3921C2349D600C4435C /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@2x.png"; path = "Sobrevuelo ISS/Resources/arrow/arrow@2x.png"; sourceTree = SOURCE_ROOT; };
-		9A37C3931C2349D600C4435C /* arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@3x.png"; path = "Sobrevuelo ISS/Resources/arrow/arrow@3x.png"; sourceTree = SOURCE_ROOT; };
-		9A37C3971C2349E200C4435C /* ISS_Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ISS_Avatar.png; path = "Sobrevuelo ISS/Resources/iss_avatar_ios/ISS_Avatar.png"; sourceTree = SOURCE_ROOT; };
-		9A37C3981C2349E200C4435C /* ISS_Avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ISS_Avatar@2x.png"; path = "Sobrevuelo ISS/Resources/iss_avatar_ios/ISS_Avatar@2x.png"; sourceTree = SOURCE_ROOT; };
-		9A37C3991C2349E200C4435C /* ISS_Avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ISS_Avatar@3x.png"; path = "Sobrevuelo ISS/Resources/iss_avatar_ios/ISS_Avatar@3x.png"; sourceTree = SOURCE_ROOT; };
+		B36C654331196E9B0FC9DD36 /* Pods-Sobrevuelo ISSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D484DD1A712FD7CE0577CD08 /* Pods-Sobrevuelo ISSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISSTests/Pods-Sobrevuelo ISSTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCCDA80AD1B63F7D93E95141 /* Pods-Sobrevuelo ISS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISS/Pods-Sobrevuelo ISS.release.xcconfig"; sourceTree = "<group>"; };
+		F22EE1C2F91CC93CDF876878 /* Pods_Sobrevuelo_ISSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sobrevuelo_ISSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A37C35D1C1F811B00C4435C /* CoreLocation.framework in Frameworks */,
+				FE1F50AE893B1F51FCDF4ACB /* Pods_Sobrevuelo_ISS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2885FC7046A1DBC4BFA5D150 /* Pods_Sobrevuelo_ISSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +276,600 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5038F652059D22E3631A8A15 /* Pods_Sobrevuelo_ISSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C0C45B4B2FD1529516AD78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DE7E7099F84BDD92FB6E64C /* Pods-Sobrevuelo ISS.debug.xcconfig */,
+				DCCDA80AD1B63F7D93E95141 /* Pods-Sobrevuelo ISS.release.xcconfig */,
+				0EA784C8DF29DEF9D38D6C11 /* Pods-Sobrevuelo ISSTests.debug.xcconfig */,
+				D484DD1A712FD7CE0577CD08 /* Pods-Sobrevuelo ISSTests.release.xcconfig */,
+				B36C654331196E9B0FC9DD36 /* Pods-Sobrevuelo ISSUITests.debug.xcconfig */,
+				892206A9F3785894E4603A98 /* Pods-Sobrevuelo ISSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6459D999211DD4C7004376A0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6459D99A211DD4C7004376A0 /* Retina */,
+				6459D99D211DD4C7004376A0 /* RetinaHD */,
+				6459D9A0211DD4C7004376A0 /* Normal */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+		6459D99A211DD4C7004376A0 /* Retina */ = {
+			isa = PBXGroup;
+			children = (
+				6459D99B211DD4C7004376A0 /* ISS_Avatar@2x.png */,
+				6459D99C211DD4C7004376A0 /* arrow@2x.png */,
+			);
+			path = Retina;
+			sourceTree = "<group>";
+		};
+		6459D99D211DD4C7004376A0 /* RetinaHD */ = {
+			isa = PBXGroup;
+			children = (
+				6459D99E211DD4C7004376A0 /* ISS_Avatar@3x.png */,
+				6459D99F211DD4C7004376A0 /* arrow@3x.png */,
+			);
+			path = RetinaHD;
+			sourceTree = "<group>";
+		};
+		6459D9A0211DD4C7004376A0 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9A1211DD4C7004376A0 /* arrow.png */,
+				6459D9A2211DD4C7004376A0 /* ISS_Avatar.png */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		6459D9AD211DD5A5004376A0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBCB211DEE0A004376A0 /* Base64Encoder */,
+				6459D9AE211DD5A5004376A0 /* DataSources */,
+				6459D9CC211DD5A5004376A0 /* JSONSerializer */,
+				6459DA50211DEBB7004376A0 /* Parsers */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6459D9AE211DD5A5004376A0 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBD0211DEE3E004376A0 /* App */,
+				6459D9AF211DD5A5004376A0 /* API */,
+				6459D9B8211DD5A5004376A0 /* Device */,
+				6459D9CA211DD5A5004376A0 /* Errors */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		6459D9AF211DD5A5004376A0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9B0211DD5A5004376A0 /* APIServerInfo.h */,
+				6459D9B2211DD5A5004376A0 /* APIDataSource.h */,
+				6459D9B1211DD5A5004376A0 /* APIDataSourceImp.h */,
+				6459D9B7211DD5A5004376A0 /* APIDataSourceImp.m */,
+				6459D9B3211DD5A5004376A0 /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6459D9B3211DD5A5004376A0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBD5211DEF04004376A0 /* MockedResponses */,
+				6459DA45211DE482004376A0 /* Overflight */,
+				6459DBC2211DEDD1004376A0 /* Request+AppInfo.h */,
+				6459DBC3211DEDD1004376A0 /* Request+AppInfo.m */,
+				6459DBC7211DEDD1004376A0 /* Request+Autenticated.h */,
+				6459DBC4211DEDD1004376A0 /* Request+Autenticated.m */,
+				6459DBC5211DEDD1004376A0 /* Request+Gzip.h */,
+				6459DBC6211DEDD1004376A0 /* Request+Gzip.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6459D9B8211DD5A5004376A0 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBBD211DED6A004376A0 /* DeviceModelWrapper */,
+				6459D9BA211DD5A5004376A0 /* Location */,
+				6459D9B9211DD5A5004376A0 /* DeviceDataSource.h */,
+				6459D9C8211DD5A5004376A0 /* DeviceDataSourceImp.m */,
+				6459D9C9211DD5A5004376A0 /* DeviceDataSourceImp.h */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		6459D9BA211DD5A5004376A0 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9BB211DD5A5004376A0 /* LocationLibraryWrapper */,
+				6459D9C0211DD5A5004376A0 /* DeviceLocation.h */,
+				6459D9C1211DD5A5004376A0 /* DeviceLocationImp.h */,
+				6459D9C2211DD5A5004376A0 /* LocationLibraryWrapper.h */,
+				6459D9C3211DD5A5004376A0 /* Errors */,
+				6459D9C7211DD5A5004376A0 /* DeviceLocationImp.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		6459D9BB211DD5A5004376A0 /* LocationLibraryWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9BC211DD5A5004376A0 /* LocationLibraryWrapperImp.m */,
+				6459D9BD211DD5A5004376A0 /* LocationLibraryWrapperImp.h */,
+				6459D9BE211DD5A5004376A0 /* Errors */,
+			);
+			path = LocationLibraryWrapper;
+			sourceTree = "<group>";
+		};
+		6459D9BE211DD5A5004376A0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9BF211DD5A5004376A0 /* LocationLibraryWrapperErrors.h */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6459D9C3211DD5A5004376A0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9C4211DD5A5004376A0 /* NSError+DeviceLocation.h */,
+				6459D9C5211DD5A5004376A0 /* NSError+DeviceLocation.m */,
+				6459D9C6211DD5A5004376A0 /* DeviceLocationErrors.h */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6459D9CA211DD5A5004376A0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9CB211DD5A5004376A0 /* DataSourceErrors.h */,
+				6459DA4D211DE9D4004376A0 /* NSError+DataSource.h */,
+				6459DA4E211DE9D4004376A0 /* NSError+DataSource.m */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6459D9CC211DD5A5004376A0 /* JSONSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9CD211DD5A5004376A0 /* JSONSerializerImp.h */,
+				6459D9CE211DD5A5004376A0 /* JSONSerializerImp.m */,
+				6459D9CF211DD5A5004376A0 /* JSONSerializer.h */,
+			);
+			path = JSONSerializer;
+			sourceTree = "<group>";
+		};
+		6459D9D7211DD5AB004376A0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC00211DF4E8004376A0 /* Validators */,
+				6459DBF5211DF1D2004376A0 /* Errors */,
+				6459D9D8211DD5AB004376A0 /* Executor */,
+				6459D9E0211DD5AB004376A0 /* UseCases */,
+				6459D9EC211DD5AB004376A0 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6459D9D8211DD5AB004376A0 /* Executor */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9D9211DD5AB004376A0 /* Interactor.h */,
+				6459D9DA211DD5AB004376A0 /* BackgrondExecutor.m */,
+				6459D9DB211DD5AB004376A0 /* MainThreadImpl.m */,
+				6459D9DC211DD5AB004376A0 /* Executor.h */,
+				6459D9DD211DD5AB004376A0 /* MainThread.h */,
+				6459D9DE211DD5AB004376A0 /* BackgrondExecutor.h */,
+				6459D9DF211DD5AB004376A0 /* MainThreadImpl.h */,
+			);
+			path = Executor;
+			sourceTree = "<group>";
+		};
+		6459D9E0211DD5AB004376A0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBED211DF15D004376A0 /* Base */,
+				6459DC0F211EEE6E004376A0 /* Overflights */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		6459D9EC211DD5AB004376A0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBF2211DF18D004376A0 /* LocationWithAccuracy.h */,
+				6459DBF3211DF18D004376A0 /* LocationWithAccuracy.m */,
+				6459DBE6211DF044004376A0 /* Location.h */,
+				6459DBE7211DF044004376A0 /* Location.m */,
+				6459DA42211DE205004376A0 /* Overflight.h */,
+				6459DA43211DE205004376A0 /* Overflight.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6459D9F5211DD5B7004376A0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE33211F3C9B00F64221 /* Collaborators */,
+				6459D9F6211DD5B7004376A0 /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6459D9F6211DD5B7004376A0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6459D9F7211DD5B7004376A0 /* BasePresenter.h */,
+				6459DA01211DD5B7004376A0 /* BasePresenter.m */,
+				6459DC0B211DF6A0004376A0 /* LifeCycleViewEventsPresenter.h */,
+				6459DC0A211DF656004376A0 /* MessageView.h */,
+				6459DA3A211DDFE4004376A0 /* WaitForTask.h */,
+				6459DA31211DDE99004376A0 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6459DA06211DD5BE004376A0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC16211EF000004376A0 /* OverflightsRepository.h */,
+				6459DC14211EF000004376A0 /* OverflightsRepositoryImp.h */,
+				6459DC15211EF000004376A0 /* OverflightsRepositoryImp.m */,
+				6459DBFA211DF28C004376A0 /* Errors */,
+				6459DA09211DD5BE004376A0 /* Validators */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6459DA09211DD5BE004376A0 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBFF211DF476004376A0 /* RepositoryValidator.h */,
+				6459DC19211EF18B004376A0 /* OverflightValidator.h */,
+				6459DC18211EF18B004376A0 /* OverflightValidator.m */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		6459DA0F211DD5CA004376A0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC04211DF59D004376A0 /* Collaborators */,
+				6459DA10211DD5CA004376A0 /* CustomViews */,
+				6459DA18211DD5CA004376A0 /* Modules */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6459DA10211DD5CA004376A0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE25211F261300F64221 /* MessageView */,
+				6459DBD9211DEFC2004376A0 /* WaitView */,
+				6459DA11211DD5CA004376A0 /* ActivityLogCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		6459DA11211DD5CA004376A0 /* ActivityLogCell */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA17211DD5CA004376A0 /* ActivityLogViewCell.h */,
+				6459DA13211DD5CA004376A0 /* ActivityLogViewCell.m */,
+				6459DA14211DD5CA004376A0 /* ActivityLogViewCell.xib */,
+			);
+			path = ActivityLogCell;
+			sourceTree = "<group>";
+		};
+		6459DA18211DD5CA004376A0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA1F211DD5CA004376A0 /* BaseViewController.h */,
+				6459DA19211DD5CA004376A0 /* BaseViewController.m */,
+				6459DA2B211DDD86004376A0 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6459DA2B211DDD86004376A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA2E211DDD86004376A0 /* MainViewController.h */,
+				6459DA2D211DDD86004376A0 /* MainViewController.m */,
+				6459DC1B211EF636004376A0 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6459DA31211DDE99004376A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA32211DDE99004376A0 /* ViewModels */,
+				6459DA35211DDE99004376A0 /* MainPresenter.h */,
+				6459DA36211DDE99004376A0 /* MainPresenterImp.h */,
+				6459DA37211DDE99004376A0 /* MainPresenterImp.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6459DA32211DDE99004376A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC0C211DF755004376A0 /* OverflightViewModel.h */,
+				6459DC0D211DF756004376A0 /* OverflightViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6459DA3B211DE193004376A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA3C211DE193004376A0 /* MainThreadExecutor.h */,
+				6459DA3E211DE193004376A0 /* MainThreadExecutor.m */,
+				6459DA3F211DE193004376A0 /* MainThreadWithNoDispatchAsync.h */,
+				6459DA3D211DE193004376A0 /* MainThreadWithNoDispatchAsync.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6459DA45211DE482004376A0 /* Overflight */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA47211DE482004376A0 /* OverflightRequest.h */,
+				6459DA46211DE482004376A0 /* OverflightRequest.m */,
+			);
+			path = Overflight;
+			sourceTree = "<group>";
+		};
+		6459DA49211DE86E004376A0 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA4A211DE86E004376A0 /* ServiceLocator.h */,
+				6459DA4B211DE86E004376A0 /* ServiceLocator.m */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		6459DA50211DEBB7004376A0 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE2C211F2C1200F64221 /* ManualParsers */,
+				6459DA51211DEBB7004376A0 /* JSONSpecs */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		6459DA51211DEBB7004376A0 /* JSONSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				6459DA52211DEBB7004376A0 /* Responses */,
+				6459DA55211DEBB8004376A0 /* Objects */,
+			);
+			path = JSONSpecs;
+			sourceTree = "<group>";
+		};
+		6459DA52211DEBB7004376A0 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE30211F30BF00F64221 /* OverflightResponseJSONSpec.h */,
+				64FFDE31211F30BF00F64221 /* OverflightResponseJSONSpec.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		6459DA55211DEBB8004376A0 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBB9211DEC72004376A0 /* Overflight */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		6459DBB9211DEC72004376A0 /* Overflight */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBBA211DEC72004376A0 /* OverflightJSONParseSpec.h */,
+				6459DBBB211DEC72004376A0 /* OverflightJSONParseSpec.m */,
+			);
+			path = Overflight;
+			sourceTree = "<group>";
+		};
+		6459DBBD211DED6A004376A0 /* DeviceModelWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBBE211DED6A004376A0 /* DeviceModelName.h */,
+				6459DBBF211DED6A004376A0 /* DeviceModelNameImp.h */,
+				6459DBC0211DED6A004376A0 /* DeviceModelNameImp.m */,
+			);
+			path = DeviceModelWrapper;
+			sourceTree = "<group>";
+		};
+		6459DBCB211DEE0A004376A0 /* Base64Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBCC211DEE0A004376A0 /* Base64EncoderImp.m */,
+				6459DBCD211DEE0A004376A0 /* Base64Encoder.h */,
+				6459DBCE211DEE0A004376A0 /* Base64EncoderImp.h */,
+			);
+			path = Base64Encoder;
+			sourceTree = "<group>";
+		};
+		6459DBD0211DEE3E004376A0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBD1211DEE3E004376A0 /* AppDataSource.h */,
+				6459DBD2211DEE3E004376A0 /* AppDataSourceImp.m */,
+				6459DBD3211DEE3E004376A0 /* AppDataSourceImp.h */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6459DBD5211DEF04004376A0 /* MockedResponses */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBD6211DEF04004376A0 /* LoaderMockedResponse.m */,
+				6459DBD7211DEF04004376A0 /* LoaderMockedResponse.h */,
+			);
+			path = MockedResponses;
+			sourceTree = "<group>";
+		};
+		6459DBD9211DEFC2004376A0 /* WaitView */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBDA211DEFC2004376A0 /* ModalWaitView.h */,
+				6459DBDB211DEFC2004376A0 /* UIViewController+WaitView.m */,
+				6459DBDC211DEFC2004376A0 /* UIViewController+ModalWaitView.m */,
+				6459DBDD211DEFC2004376A0 /* SpinWaitView.h */,
+				6459DBDE211DEFC2004376A0 /* ModalWaitView.m */,
+				6459DBDF211DEFC2004376A0 /* SpinWaitView.m */,
+				6459DBE0211DEFC2004376A0 /* UIViewController+ModalWaitView.h */,
+				6459DBE1211DEFC2004376A0 /* UIViewController+WaitView.h */,
+			);
+			path = WaitView;
+			sourceTree = "<group>";
+		};
+		6459DBE9211DF117004376A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBEA211DF117004376A0 /* Transformer.m */,
+				6459DBEB211DF117004376A0 /* Transformer.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6459DBED211DF15D004376A0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBEE211DF15D004376A0 /* BaseInteractor.h */,
+				6459DBEF211DF15D004376A0 /* BaseInteractor.m */,
+				6459DBF0211DF15D004376A0 /* BaseInteractor+Protected.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6459DBF5211DF1D2004376A0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBF8211DF1D2004376A0 /* InteractorErrors.h */,
+				6459DBF6211DF1D2004376A0 /* NSError+BaseInteractor.h */,
+				6459DBF7211DF1D2004376A0 /* NSError+BaseInteractor.m */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6459DBFA211DF28C004376A0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6459DBFB211DF28C004376A0 /* NSError+Repository.m */,
+				6459DBFC211DF28C004376A0 /* RepositoryErrors.h */,
+				6459DBFD211DF28C004376A0 /* NSError+Repository.h */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6459DC00211DF4E8004376A0 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC01211DF4E8004376A0 /* Validator.h */,
+				6459DC02211DF4E8004376A0 /* Validator.m */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		6459DC04211DF59D004376A0 /* Collaborators */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE39211F3D0700F64221 /* SupportedLocale */,
+				6459DC05211DF59D004376A0 /* TranslateError */,
+			);
+			path = Collaborators;
+			sourceTree = "<group>";
+		};
+		6459DC05211DF59D004376A0 /* TranslateError */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC06211DF59D004376A0 /* ErrorTranslaterImp.m */,
+				6459DC07211DF59D004376A0 /* ErrorTranslater.h */,
+				6459DC08211DF59D004376A0 /* ErrorTranslaterImp.h */,
+			);
+			path = TranslateError;
+			sourceTree = "<group>";
+		};
+		6459DC0F211EEE6E004376A0 /* Overflights */ = {
+			isa = PBXGroup;
+			children = (
+				6459DC11211EEE6E004376A0 /* OverflightsUseCase.h */,
+				6459DC12211EEE6E004376A0 /* OverflightsInteractor.h */,
+				6459DC10211EEE6E004376A0 /* OverflightsInteractor.m */,
+			);
+			path = Overflights;
+			sourceTree = "<group>";
+		};
+		64FFDE25211F261300F64221 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE26211F261300F64221 /* MessageViewAction.h */,
+				64FFDE27211F261300F64221 /* MessageViewImp.m */,
+				64FFDE28211F261300F64221 /* MessageViewAction.m */,
+				64FFDE29211F261300F64221 /* MessageViewImp.h */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		64FFDE2C211F2C1200F64221 /* ManualParsers */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE2D211F2C1200F64221 /* OverflightsParse.h */,
+				64FFDE2E211F2C1200F64221 /* OverflightsParse.m */,
+			);
+			path = ManualParsers;
+			sourceTree = "<group>";
+		};
+		64FFDE33211F3C9B00F64221 /* Collaborators */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE34211F3C9B00F64221 /* DateFormater */,
+			);
+			path = Collaborators;
+			sourceTree = "<group>";
+		};
+		64FFDE34211F3C9B00F64221 /* DateFormater */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE37211F3C9B00F64221 /* DateFormater.h */,
+				64FFDE36211F3C9B00F64221 /* DateFormaterImp.h */,
+				64FFDE35211F3C9B00F64221 /* DateFormaterImp.m */,
+			);
+			path = DateFormater;
+			sourceTree = "<group>";
+		};
+		64FFDE39211F3D0700F64221 /* SupportedLocale */ = {
+			isa = PBXGroup;
+			children = (
+				64FFDE3B211F3D0700F64221 /* SupportedLocale.h */,
+				64FFDE3C211F3D0700F64221 /* SupportedLocaleImp.h */,
+				64FFDE3A211F3D0700F64221 /* SupportedLocaleImp.m */,
+			);
+			path = SupportedLocale;
+			sourceTree = "<group>";
+		};
 		9A37C31C1C1F671F00C4435C = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +878,8 @@
 				9A37C3411C1F671F00C4435C /* Sobrevuelo ISSTests */,
 				9A37C34C1C1F671F00C4435C /* Sobrevuelo ISSUITests */,
 				9A37C3261C1F671F00C4435C /* Products */,
+				00C0C45B4B2FD1529516AD78 /* Pods */,
+				F1621A3BCA8FC397A6FFAB94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,16 +896,20 @@
 		9A37C3271C1F671F00C4435C /* Sobrevuelo ISS */ = {
 			isa = PBXGroup;
 			children = (
-				9A37C37B1C21D22600C4435C /* Handlers */,
+				6459DA0F211DD5CA004376A0 /* UI */,
+				6459D9F5211DD5B7004376A0 /* Presentation */,
+				6459DA06211DD5BE004376A0 /* Repository */,
+				6459D9D7211DD5AB004376A0 /* Domain */,
+				6459D9AD211DD5A5004376A0 /* Data */,
+				6459DA49211DE86E004376A0 /* DI */,
 				9A37C3791C21CDBD00C4435C /* Macros */,
-				9A37C3781C21CB1C00C4435C /* Views */,
-				9A37C3771C21CAFA00C4435C /* Controllers */,
-				9A37C3761C21CA3000C4435C /* Entities */,
 				9A37C3611C2089EA00C4435C /* Resources */,
+				6459DBE9211DF117004376A0 /* Utils */,
 				9A37C32B1C1F671F00C4435C /* AppDelegate.h */,
 				9A37C32C1C1F671F00C4435C /* AppDelegate.m */,
 				9A37C3341C1F671F00C4435C /* Assets.xcassets */,
 				9A37C3391C1F671F00C4435C /* Info.plist */,
+				6459D9AB211DD54C004376A0 /* LaunchScreen.storyboard */,
 				9A37C3281C1F671F00C4435C /* Supporting Files */,
 			);
 			path = "Sobrevuelo ISS";
@@ -155,6 +928,7 @@
 			children = (
 				9A37C3421C1F671F00C4435C /* Sobrevuelo_ISSTests.m */,
 				9A37C3441C1F671F00C4435C /* Info.plist */,
+				6459DA3B211DE193004376A0 /* Helpers */,
 			);
 			path = "Sobrevuelo ISSTests";
 			sourceTree = "<group>";
@@ -171,59 +945,9 @@
 		9A37C3611C2089EA00C4435C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A37C3691C208A5400C4435C /* arrow */,
-				9A37C3621C208A4A00C4435C /* iss_avatar_ios */,
+				6459D999211DD4C7004376A0 /* Images */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		9A37C3621C208A4A00C4435C /* iss_avatar_ios */ = {
-			isa = PBXGroup;
-			children = (
-				9A37C3971C2349E200C4435C /* ISS_Avatar.png */,
-				9A37C3981C2349E200C4435C /* ISS_Avatar@2x.png */,
-				9A37C3991C2349E200C4435C /* ISS_Avatar@3x.png */,
-			);
-			path = iss_avatar_ios;
-			sourceTree = "<group>";
-		};
-		9A37C3691C208A5400C4435C /* arrow */ = {
-			isa = PBXGroup;
-			children = (
-				9A37C3911C2349D600C4435C /* arrow.png */,
-				9A37C3921C2349D600C4435C /* arrow@2x.png */,
-				9A37C3931C2349D600C4435C /* arrow@3x.png */,
-			);
-			path = arrow;
-			sourceTree = "<group>";
-		};
-		9A37C3761C21CA3000C4435C /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				9A37C38E1C2349B400C4435C /* PassEntity.h */,
-				9A37C38F1C2349B400C4435C /* PassEntity.m */,
-			);
-			name = Entities;
-			sourceTree = "<group>";
-		};
-		9A37C3771C21CAFA00C4435C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				9A37C3881C2349A300C4435C /* DetailsViewController.h */,
-				9A37C3891C2349A300C4435C /* DetailsViewController.m */,
-				9A37C38A1C2349A300C4435C /* ViewController.h */,
-				9A37C38B1C2349A300C4435C /* ViewController.m */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		9A37C3781C21CB1C00C4435C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9A37C3861C23498500C4435C /* Main.storyboard */,
-				9A37C3361C1F671F00C4435C /* LaunchScreen.storyboard */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		9A37C3791C21CDBD00C4435C /* Macros */ = {
@@ -234,13 +958,14 @@
 			name = Macros;
 			sourceTree = "<group>";
 		};
-		9A37C37B1C21D22600C4435C /* Handlers */ = {
+		F1621A3BCA8FC397A6FFAB94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9A37C3831C23496500C4435C /* LocationManager.m */,
-				9A37C3821C23495600C4435C /* LocationManager.h */,
+				95E6F06719695E7862C94A9F /* Pods_Sobrevuelo_ISS.framework */,
+				408E76398B5A4E48A55B5A61 /* Pods_Sobrevuelo_ISSTests.framework */,
+				F22EE1C2F91CC93CDF876878 /* Pods_Sobrevuelo_ISSUITests.framework */,
 			);
-			name = Handlers;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +975,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A37C3521C1F671F00C4435C /* Build configuration list for PBXNativeTarget "Sobrevuelo ISS" */;
 			buildPhases = (
+				1448EBD96B37328CA54ACDB2 /* [CP] Check Pods Manifest.lock */,
 				9A37C3211C1F671F00C4435C /* Sources */,
 				9A37C3221C1F671F00C4435C /* Frameworks */,
 				9A37C3231C1F671F00C4435C /* Resources */,
+				0B2EAE3889B08A012DAE9D16 /* [CP] Embed Pods Frameworks */,
+				8079468EE670E50C6A48D2B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,9 +995,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A37C3551C1F671F00C4435C /* Build configuration list for PBXNativeTarget "Sobrevuelo ISSTests" */;
 			buildPhases = (
+				2954824D3D2A0D515D4F9BB6 /* [CP] Check Pods Manifest.lock */,
 				9A37C33A1C1F671F00C4435C /* Sources */,
 				9A37C33B1C1F671F00C4435C /* Frameworks */,
 				9A37C33C1C1F671F00C4435C /* Resources */,
+				777479B3AFC5CF821769B3FE /* [CP] Embed Pods Frameworks */,
+				68506145F04491E794C6C658 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,9 +1016,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A37C3581C1F671F00C4435C /* Build configuration list for PBXNativeTarget "Sobrevuelo ISSUITests" */;
 			buildPhases = (
+				9FF9EC88BF2E903B69D932E5 /* [CP] Check Pods Manifest.lock */,
 				9A37C3451C1F671F00C4435C /* Sources */,
 				9A37C3461C1F671F00C4435C /* Frameworks */,
 				9A37C3471C1F671F00C4435C /* Resources */,
+				452DB5C9D50BC912B677C1FE /* [CP] Embed Pods Frameworks */,
+				11F4CB18619EF57A43227560 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +1044,7 @@
 				TargetAttributes = {
 					9A37C3241C1F671F00C4435C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C86A52F333;
 					};
 					9A37C33D1C1F671F00C4435C = {
 						CreatedOnToolsVersion = 7.2;
@@ -346,15 +1081,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A37C3381C1F671F00C4435C /* LaunchScreen.storyboard in Resources */,
-				9A37C3871C23498500C4435C /* Main.storyboard in Resources */,
-				9A37C39A1C2349E200C4435C /* ISS_Avatar.png in Resources */,
-				9A37C39B1C2349E200C4435C /* ISS_Avatar@2x.png in Resources */,
-				9A37C3951C2349D600C4435C /* arrow@2x.png in Resources */,
-				9A37C3941C2349D600C4435C /* arrow.png in Resources */,
-				9A37C3961C2349D600C4435C /* arrow@3x.png in Resources */,
-				9A37C39C1C2349E200C4435C /* ISS_Avatar@3x.png in Resources */,
+				6459D9A4211DD4C7004376A0 /* arrow@2x.png in Resources */,
+				6459DA22211DD5CA004376A0 /* ActivityLogViewCell.xib in Resources */,
+				6459D9A8211DD4C7004376A0 /* ISS_Avatar.png in Resources */,
+				6459D9A5211DD4C7004376A0 /* ISS_Avatar@3x.png in Resources */,
+				6459D9A6211DD4C7004376A0 /* arrow@3x.png in Resources */,
 				9A37C3351C1F671F00C4435C /* Assets.xcassets in Resources */,
+				6459D9A3211DD4C7004376A0 /* ISS_Avatar@2x.png in Resources */,
+				6459DC1C211EF636004376A0 /* MainViewController.xib in Resources */,
+				6459D9AC211DD54C004376A0 /* LaunchScreen.storyboard in Resources */,
+				6459D9A7211DD4C7004376A0 /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,17 +1110,246 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B2EAE3889B08A012DAE9D16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISS/Pods-Sobrevuelo ISS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework",
+				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
+				"${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework",
+				"${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SFL/SFL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceUtil.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OBTRequest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrderedDictionary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISS/Pods-Sobrevuelo ISS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11F4CB18619EF57A43227560 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1448EBD96B37328CA54ACDB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sobrevuelo ISS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2954824D3D2A0D515D4F9BB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sobrevuelo ISSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452DB5C9D50BC912B677C1FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework",
+				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
+				"${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework",
+				"${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SFL/SFL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceUtil.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OBTRequest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrderedDictionary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68506145F04491E794C6C658 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSTests/Pods-Sobrevuelo ISSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777479B3AFC5CF821769B3FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSTests/Pods-Sobrevuelo ISSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework",
+				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
+				"${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework",
+				"${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SFL/SFL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceUtil.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OBTRequest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrderedDictionary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSTests/Pods-Sobrevuelo ISSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8079468EE670E50C6A48D2B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISS/Pods-Sobrevuelo ISS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF9EC88BF2E903B69D932E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sobrevuelo ISSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A37C3211C1F671F00C4435C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A37C3841C23496500C4435C /* LocationManager.m in Sources */,
-				9A37C3901C2349B400C4435C /* PassEntity.m in Sources */,
-				9A37C38D1C2349A300C4435C /* ViewController.m in Sources */,
-				9A37C38C1C2349A300C4435C /* DetailsViewController.m in Sources */,
+				64FFDE38211F3C9B00F64221 /* DateFormaterImp.m in Sources */,
+				6459DC09211DF59E004376A0 /* ErrorTranslaterImp.m in Sources */,
+				6459DBC9211DEDD1004376A0 /* Request+Autenticated.m in Sources */,
+				6459D9F0211DD5AB004376A0 /* MainThreadImpl.m in Sources */,
+				6459DBC8211DEDD1004376A0 /* Request+AppInfo.m in Sources */,
+				6459DC0E211DF756004376A0 /* OverflightViewModel.m in Sources */,
+				6459DA48211DE482004376A0 /* OverflightRequest.m in Sources */,
+				64FFDE2F211F2C1200F64221 /* OverflightsParse.m in Sources */,
+				6459DA25211DD5CA004376A0 /* BaseViewController.m in Sources */,
+				6459DBF9211DF1D2004376A0 /* NSError+BaseInteractor.m in Sources */,
+				64FFDE2B211F261300F64221 /* MessageViewAction.m in Sources */,
+				6459D9EF211DD5AB004376A0 /* BackgrondExecutor.m in Sources */,
+				6459D9D1211DD5A5004376A0 /* APIDataSourceImp.m in Sources */,
+				6459D9D5211DD5A5004376A0 /* DeviceDataSourceImp.m in Sources */,
 				9A37C32D1C1F671F00C4435C /* AppDelegate.m in Sources */,
+				6459DA4C211DE86E004376A0 /* ServiceLocator.m in Sources */,
+				6459D9D3211DD5A5004376A0 /* NSError+DeviceLocation.m in Sources */,
+				6459DC1A211EF18B004376A0 /* OverflightValidator.m in Sources */,
+				6459DBCF211DEE0A004376A0 /* Base64EncoderImp.m in Sources */,
+				6459DBEC211DF117004376A0 /* Transformer.m in Sources */,
+				6459DBE5211DEFC2004376A0 /* SpinWaitView.m in Sources */,
+				6459DBC1211DED6A004376A0 /* DeviceModelNameImp.m in Sources */,
+				64FFDE32211F30BF00F64221 /* OverflightResponseJSONSpec.m in Sources */,
+				6459D9D2211DD5A5004376A0 /* LocationLibraryWrapperImp.m in Sources */,
+				6459DBE2211DEFC2004376A0 /* UIViewController+WaitView.m in Sources */,
+				6459DBFE211DF28C004376A0 /* NSError+Repository.m in Sources */,
+				64FFDE2A211F261300F64221 /* MessageViewImp.m in Sources */,
+				64FFDE3D211F3D0700F64221 /* SupportedLocaleImp.m in Sources */,
+				6459DA44211DE206004376A0 /* Overflight.m in Sources */,
+				6459DC03211DF4E8004376A0 /* Validator.m in Sources */,
+				6459D9D6211DD5A5004376A0 /* JSONSerializerImp.m in Sources */,
+				6459DC17211EF000004376A0 /* OverflightsRepositoryImp.m in Sources */,
+				6459DC13211EEE6E004376A0 /* OverflightsInteractor.m in Sources */,
+				6459D9D4211DD5A5004376A0 /* DeviceLocationImp.m in Sources */,
+				6459DBE3211DEFC2004376A0 /* UIViewController+ModalWaitView.m in Sources */,
+				6459DA21211DD5CA004376A0 /* ActivityLogViewCell.m in Sources */,
+				6459DA05211DD5B7004376A0 /* BasePresenter.m in Sources */,
+				6459DA39211DDE99004376A0 /* MainPresenterImp.m in Sources */,
+				6459DBBC211DEC73004376A0 /* OverflightJSONParseSpec.m in Sources */,
+				6459DBCA211DEDD1004376A0 /* Request+Gzip.m in Sources */,
+				6459DBE4211DEFC2004376A0 /* ModalWaitView.m in Sources */,
+				6459DA30211DDD86004376A0 /* MainViewController.m in Sources */,
+				6459DA4F211DE9D5004376A0 /* NSError+DataSource.m in Sources */,
+				6459DBF1211DF15D004376A0 /* BaseInteractor.m in Sources */,
+				6459DBD8211DEF04004376A0 /* LoaderMockedResponse.m in Sources */,
+				6459DBE8211DF044004376A0 /* Location.m in Sources */,
 				9A37C32A1C1F671F00C4435C /* main.m in Sources */,
+				6459DBF4211DF18D004376A0 /* LocationWithAccuracy.m in Sources */,
+				6459DBD4211DEE3E004376A0 /* AppDataSourceImp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +1357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6459DA41211DE194004376A0 /* MainThreadExecutor.m in Sources */,
+				6459DA40211DE194004376A0 /* MainThreadWithNoDispatchAsync.m in Sources */,
 				9A37C3431C1F671F00C4435C /* Sobrevuelo_ISSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,17 +1385,6 @@
 			targetProxy = 9A37C34A1C1F671F00C4435C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9A37C3361C1F671F00C4435C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A37C3371C1F671F00C4435C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9A37C3501C1F671F00C4435C /* Debug */ = {
@@ -515,28 +1471,35 @@
 		};
 		9A37C3531C1F671F00C4435C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE7E7099F84BDD92FB6E64C /* Pods-Sobrevuelo ISS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C86A52F333;
 				INFOPLIST_FILE = "Sobrevuelo ISS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "necsal.Sobrevuelo-ISS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.necsal.Sobrevuelo-ISS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9A37C3541C1F671F00C4435C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCCDA80AD1B63F7D93E95141 /* Pods-Sobrevuelo ISS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C86A52F333;
 				INFOPLIST_FILE = "Sobrevuelo ISS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "necsal.Sobrevuelo-ISS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.necsal.Sobrevuelo-ISS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		9A37C3561C1F671F00C4435C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA784C8DF29DEF9D38D6C11 /* Pods-Sobrevuelo ISSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Sobrevuelo ISSTests/Info.plist";
@@ -549,6 +1512,7 @@
 		};
 		9A37C3571C1F671F00C4435C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D484DD1A712FD7CE0577CD08 /* Pods-Sobrevuelo ISSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Sobrevuelo ISSTests/Info.plist";
@@ -561,6 +1525,7 @@
 		};
 		9A37C3591C1F671F00C4435C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36C654331196E9B0FC9DD36 /* Pods-Sobrevuelo ISSUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Sobrevuelo ISSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -573,6 +1538,7 @@
 		};
 		9A37C35A1C1F671F00C4435C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892206A9F3785894E4603A98 /* Pods-Sobrevuelo ISSUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Sobrevuelo ISSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

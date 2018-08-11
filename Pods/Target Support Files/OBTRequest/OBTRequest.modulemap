@@ -1,0 +1,6 @@
+framework module OBTRequest {
+  umbrella header "OBTRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

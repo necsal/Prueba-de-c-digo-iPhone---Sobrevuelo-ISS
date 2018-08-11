@@ -1,0 +1,19 @@
+{
+  "name": "SFL",
+  "version": "2.0",
+  "license": "MIT",
+  "summary": "Simple Format Language",
+  "homepage": "https://github.com/SeanChenU/SimpleFormatLanguage",
+  "authors": "ejvaughan",
+  "source": {
+    "git": "https://github.com/SeanChenU/SimpleFormatLanguage.git"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": [
+    "NSLayoutConstraint+SimpleFormatLanguage.h",
+    "NSLayoutConstraint+SimpleFormatLanguage.m"
+  ],
+  "requires_arc": true
+}

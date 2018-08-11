@@ -1,0 +1,6 @@
+framework module Pods_Sobrevuelo_ISSTests {
+  umbrella header "Pods-Sobrevuelo ISSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
