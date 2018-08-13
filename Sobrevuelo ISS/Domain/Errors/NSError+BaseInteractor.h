@@ -14,5 +14,6 @@
 + (NSError *)domainErrorWithCode:(DomainErrorCode)errorCode;
 + (NSError *)convertToInteractorErrorFromRepositoryError:(NSError *)repositoryError;
 + (NSError *)convertToInteractorErrorFromLocationError:(NSError *)locationError;
++ (NSError *)convertToInteractorErrorFromGeoreverseError:(NSError *)georeverseError;
 
 @end

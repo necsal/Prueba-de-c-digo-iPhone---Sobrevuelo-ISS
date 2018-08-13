@@ -1,6 +1,12 @@
 PODS:
   - DeviceUtil (2.1.3)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
   - INTULocationManager (4.3.0)
+  - MZTimerLabel (0.5.4)
   - OBTRequest (0.0.14):
     - OrderedDictionary
     - Reachability
@@ -10,7 +16,9 @@ PODS:
 
 DEPENDENCIES:
   - DeviceUtil (= 2.1.3)
+  - GoogleMaps (= 2.7.0)
   - INTULocationManager (= 4.3.0)
+  - MZTimerLabel
   - OBTRequest
   - SFL (from `https://github.com/SeanChenU/SimpleFormatLanguage.git`)
 
@@ -25,12 +33,14 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   DeviceUtil: 4cf6b8bdc108ef89fe6a1c744a8d743bef9b245c
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   INTULocationManager: 0ca5c76eacc029ba15938fc699520bc333ed6435
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
   OBTRequest: 240385c4d3c8e61e48a0d05c0d2a8c5f6d993460
   OrderedDictionary: 138c8d2e358d3a0c9adda15c6c7db24e8e3b09e6
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SFL: 8eac587d442f113c790539e8290d6d7faf019ef4
 
-PODFILE CHECKSUM: 30ebac53e12685b591e7340c2d782ce32cb8520e
+PODFILE CHECKSUM: f1bbd8b9cab1da4d580eb07c56697d4b93551e22
 
 COCOAPODS: 1.4.0

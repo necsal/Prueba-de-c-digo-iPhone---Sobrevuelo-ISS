@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Overflight.h"
 
 @protocol APIDataSource <NSObject>
 
 - (NSArray *)getOverflightsWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude error:(NSError **)error;
+- (Overflight *)getNextOverflightWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude error:(NSError **)error;
 
 @end

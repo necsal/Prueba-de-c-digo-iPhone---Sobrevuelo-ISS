@@ -18,7 +18,9 @@ typedef enum {
     
     DomainErrorLocationUnavailable,
     DomainErrorLocationDenied,
-    DomainErrorLocationUnknown
+    DomainErrorLocationUnknown,
+    
+    DomainErrorGeoreverseNotFoundError
 } DomainErrorCode;
 
 #endif

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "ServiceLocator.h"
+@import GoogleMaps;
 
 @interface AppDelegate ()
 
@@ -19,9 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //MainViewController *mainVC = [ServiceLocator provideMainViewController];
-    //UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    //[self.window.rootViewController presentViewController:navCon animated:YES completion:nil];
+    [self initThirdPartyServices];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MainViewController *mainVC = [ServiceLocator provideMainViewController];
@@ -29,6 +28,14 @@
     [self.window makeKeyAndVisible];
 
     return YES;
+}
+
+- (void)initThirdPartyServices {
+    [self initGoogleMaps];
+}
+
+- (void)initGoogleMaps {
+    [GMSServices provideAPIKey:@"AIzaSyCX01dUDDN3ROQIa113-lm7oI4HwJF2wPE"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

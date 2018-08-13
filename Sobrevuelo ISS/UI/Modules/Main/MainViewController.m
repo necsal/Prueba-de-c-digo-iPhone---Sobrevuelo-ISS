@@ -8,8 +8,10 @@
 
 #import "MainViewController.h"
 #import "UIViewController+ModalWaitView.h"
+#import "TimerCountDownView.h"
+#import "NSLayoutConstraint+SimpleFormatLanguage.h"
 
-@interface MainViewController () {
+@interface MainViewController () <TimerCountDownViewDelegate> {
     id<MainPresenter> _presenter;
 }
 
@@ -34,6 +36,15 @@
     [super viewDidLoad];
     [self setupNavbar:NavBarBack withTitle:@"Localización ISS"];
     [_presenter viewDidLoad];
+
+    [self setupView];
+}
+
+- (void)setupView {
+    NSString *urlAddress = @"http://necsal.es/ISS_location/iss_location.html";
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:requestObj];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,27 +58,37 @@
     [self hideModalWaitView];
 }
 
-- (void)refreshOverflightsWithOverflightsViewModel:(NSArray *)overflightsViewModel {
-    OverflightViewModel *overflightViewModel = [overflightsViewModel objectAtIndex:0];
-    _lblDuration1.text = overflightViewModel.duration;
-    _lblRisetime1.text = overflightViewModel.risetime;
-    
-    overflightViewModel = [overflightsViewModel objectAtIndex:1];
-    _lblDuration2.text = overflightViewModel.duration;
-    _lblRisetime2.text = overflightViewModel.risetime;
-    
-    overflightViewModel = [overflightsViewModel objectAtIndex:2];
-    _lblDuration3.text = overflightViewModel.duration;
-    _lblRisetime3.text = overflightViewModel.risetime;
-    
-    overflightViewModel = [overflightsViewModel objectAtIndex:3];
-    _lblDuration4.text = overflightViewModel.duration;
-    _lblRisetime4.text = overflightViewModel.risetime;
-    
-    overflightViewModel = [overflightsViewModel objectAtIndex:4];
-    _lblDuration5.text = overflightViewModel.duration;
-    _lblRisetime5.text = overflightViewModel.risetime;
-    
+- (void)refreshOverflightsWithOverflightViewModel:(OverflightViewModel *)overflightViewModel {
+    _lblRisetime.text = overflightViewModel.risetime;
+    [self setupCountDownWithCountDownDate:overflightViewModel.duration];
+}
+- (void)setupCountDownWithCountDownDate:(NSTimeInterval)countDownDate {
+    TimerCountDownView *countDownTimerLabel = [[TimerCountDownView alloc] init];
+    countDownTimerLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [_viewContainerTimerCountDown addSubview:countDownTimerLabel];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithSimpleFormat:@[
+                   @"_viewContainerTimerCountDown.top = countDownTimerLabel.top", @"_viewContainerTimerCountDown.left = countDownTimerLabel.left",
+                   @"_viewContainerTimerCountDown.right = countDownTimerLabel.right", @"_viewContainerTimerCountDown.bottom = countDownTimerLabel.bottom"
+               ]
+                                                                      metrics:nil
+                                                                        views:NSDictionaryOfVariableBindings(countDownTimerLabel, _viewContainerTimerCountDown)]];
+
+    countDownTimerLabel.delegate = self;
+    countDownTimerLabel.fontSize = 15;
+    countDownTimerLabel.color = [UIColor blackColor];
+    countDownTimerLabel.textAlignment = NSTextAlignmentLeft;
+    [countDownTimerLabel startWithCountDownDate:countDownDate];
+}
+- (void)countDownReachZero {
+    NSLog(@"Se acabó el tiempo !!!");
+}
+
+- (void)refreshLocation:(LocationViewModel *)locationViewModel {
+    _lblLocation.text = locationViewModel.locationString;
+}
+
+- (void)refreshAddress:(NSString *)address {
+    _lblAddress.text = address;
 }
 
 @end

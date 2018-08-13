@@ -9,6 +9,7 @@
 #import "LifeCycleViewEventsPresenter.h"
 #import "WaitForTask.h"
 #import "OverflightViewModel.h"
+#import "LocationViewModel.h"
 
 #ifndef MainPresenter_h
 #define MainPresenter_h
@@ -17,7 +18,9 @@
 
 @protocol MainView <WaitForTask>
 
-- (void)refreshOverflightsWithOverflightsViewModel:(NSArray *)overflightsViewModel;
+- (void)refreshOverflightsWithOverflightViewModel:(OverflightViewModel *)overflightViewModel;
+- (void)refreshLocation:(LocationViewModel *)locationViewModel;
+- (void)refreshAddress:(NSString *)address;
 
 @end
 

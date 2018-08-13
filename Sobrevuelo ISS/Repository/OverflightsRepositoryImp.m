@@ -28,7 +28,6 @@
 }
 
 - (NSArray *)getOverflightsWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude error:(NSError **)error {
-
     NSError *dataSourceError = nil;
     NSArray *overflights = [_apiDataSource getOverflightsWithLatitude:latitude longitude:longitude error:&dataSourceError];
     if (dataSourceError) {
@@ -43,6 +42,23 @@
     }
 
     return overflights;
+}
+
+- (Overflight *)getNextOverflightWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude error:(NSError **)error {
+    NSError *dataSourceError = nil;
+    Overflight *overflight = [_apiDataSource getNextOverflightWithLatitude:latitude longitude:longitude error:&dataSourceError];
+    if (dataSourceError) {
+        NSError *repositoryError = [NSError convertToRepositoryFromDataSourceError:dataSourceError];
+        if (error) {
+            *error = repositoryError;
+        }
+    } else {
+        if (![_overflightValidator isValid:overflight]) {
+            *error = [NSError repositoryErrorWithCode:RepositoryErrorUnknown];
+        }
+    }
+
+    return overflight;
 }
 
 @end

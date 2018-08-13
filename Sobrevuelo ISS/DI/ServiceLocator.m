@@ -16,6 +16,8 @@
 #import "APIDataSourceImp.h"
 #import "MainPresenter.h"
 #import "MainPresenterImp.h"
+#import "NextOverflightUseCase.h"
+#import "NextOverflightInteractor.h"
 #import "OverflightsUseCase.h"
 #import "OverflightsInteractor.h"
 #import "OverflightsRepository.h"
@@ -23,6 +25,10 @@
 #import "DeviceLocation.h"
 #import "DeviceLocationImp.h"
 #import "DateFormaterImp.h"
+#import "GeoreverseUseCase.h"
+#import "GeoreverseInteractor.h"
+#import "GeoreverseDataSource.h"
+#import "GeoreverseDataSourceImp.h"
 
 @implementation ServiceLocator
 
@@ -74,12 +80,23 @@
 }
 
 + (id<MainPresenter>)provideMainPresenter {
-    return [[MainPresenterImp alloc] initWithOverflightsUseCase:[self provideOverflightsUseCase]
-                                                 deviceLocation:[self provideDeviceLocation]
-                                                errorTranslater:[self provideErrorTranslater]
-                                                    messageView:[self provideMessageView]];
+    return [[MainPresenterImp alloc] initWithNextOverflightUseCase:[self provideNextOverflightUseCase]
+                                                 georeverseUseCase:[self provideGeoreverseUseCase]
+                                                    deviceLocation:[self provideDeviceLocation]
+                                                   errorTranslater:[self provideErrorTranslater]
+                                                       messageView:[self provideMessageView]];
 }
 
++ (id<GeoreverseUseCase>)provideGeoreverseUseCase {
+    return [[GeoreverseInteractor alloc] initWithGeoreverseDataSource:[self provideGeoreverseDataSource] mainThread:[self provideMainThread] executor:[self provideExecutor]];
+}
++ (id<GeoreverseDataSource>)provideGeoreverseDataSource {
+    return [[GeoreverseDataSourceImp alloc] init];
+}
+
++ (id<NextOverflightUseCase>)provideNextOverflightUseCase {
+    return [[NextOverflightInteractor alloc] initWithOverflightsRepository:[self provideOverflightsRepository] mainThread:[self provideMainThread] executor:[self provideExecutor]];
+}
 + (id<OverflightsUseCase>)provideOverflightsUseCase {
     return [[OverflightsInteractor alloc] initWithOverflightsRepository:[self provideOverflightsRepository] mainThread:[self provideMainThread] executor:[self provideExecutor]];
 }

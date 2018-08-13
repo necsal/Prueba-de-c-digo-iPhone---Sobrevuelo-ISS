@@ -136,6 +136,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework"
@@ -144,6 +145,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework"

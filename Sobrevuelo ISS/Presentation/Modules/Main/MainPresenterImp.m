@@ -8,9 +8,10 @@
 
 #import "MainPresenterImp.h"
 
-@interface MainPresenterImp () <OverflightsCallback, DeviceLocationCallback> {
+@interface MainPresenterImp () <NextOverflightCallback, DeviceLocationCallback, GeoreverseCallback> {
     __weak id<MainView> _view;
-    id<OverflightsUseCase> _overflightsUseCase;
+    id<NextOverflightUseCase> _nextOverflightUseCase;
+    id<GeoreverseUseCase> _georeverseUseCase;
     id<DeviceLocation> _deviceLocation;
     Location *_location;
 }
@@ -19,13 +20,15 @@
 
 @implementation MainPresenterImp
 
-- (instancetype)initWithOverflightsUseCase:(id<OverflightsUseCase>)overflightsUseCase
-                            deviceLocation:(id<DeviceLocation>)deviceLocation
-                           errorTranslater:(id<ErrorTranslater>)errorTranslater
-                               messageView:(id<MessageView>)messageView {
+- (instancetype)initWithNextOverflightUseCase:(id<NextOverflightUseCase>)nextOverflightUseCase
+                            georeverseUseCase:(id<GeoreverseUseCase>)georeverseUseCase
+                               deviceLocation:(id<DeviceLocation>)deviceLocation
+                              errorTranslater:(id<ErrorTranslater>)errorTranslater
+                                  messageView:(id<MessageView>)messageView {
     self = [super init];
     if (self) {
-        _overflightsUseCase = overflightsUseCase;
+        _nextOverflightUseCase = nextOverflightUseCase;
+        _georeverseUseCase = georeverseUseCase;
         _deviceLocation = deviceLocation;
         _errorTranslater = errorTranslater;
         _messageView = messageView;
@@ -55,33 +58,35 @@
 }
 - (void)currentLocationOk:(Location *)location {
     _location = location;
-    [self getOverflights];
+    LocationViewModel *locationVM = [[LocationViewModel alloc] initWithLocation:location];
+    [_view refreshLocation:locationVM];
+    [self getGeoreverse];
+    [self getNextOverflight];
 }
 - (void)currentLocationError:(NSError *)error {
     [_view hideWaitForTask];
     [self handleError:error];
 }
 
-- (void)getOverflights {
-    [_overflightsUseCase executeWithLatitude:_location.latitude longitude:_location.longitude andCallback:self];
+- (void)getGeoreverse {
+    [_georeverseUseCase executeWithLocation:_location andGeoreverseCallback:self];
+}
+- (void)georeverseOk:(NSString *)address {
+    [_view refreshAddress:address];
+}
+- (void)georeverseError:(NSError *)error {
 }
 
-- (void)overflightsOk:(NSArray *)overflights {
-    [_view hideWaitForTask];
-    NSArray *overflightsViewModel = [self getOverflightsViewModelWithOverflights:overflights];
-    [_view refreshOverflightsWithOverflightsViewModel:overflightsViewModel];
+- (void)getNextOverflight {
+    [_nextOverflightUseCase executeWithLatitude:_location.latitude longitude:_location.longitude andCallback:self];
 }
-- (NSArray *)getOverflightsViewModelWithOverflights:(NSArray *)overflights {
-    NSMutableArray *overflightsViewModel = [[NSMutableArray alloc] init];
-    for (Overflight *overflight in overflights) {
-        OverflightViewModel *overflightViewModel = [[OverflightViewModel alloc] initWithOverflight:overflight];
-        [overflightsViewModel addObject:overflightViewModel];
-    }
-    return overflightsViewModel;
-}
-- (void)overflightsError:(NSError *)error {
+- (void)nextOverflightOk:(Overflight *)overflight {
     [_view hideWaitForTask];
-
+    OverflightViewModel *overflightViewModel = [[OverflightViewModel alloc] initWithOverflight:overflight];
+    [_view refreshOverflightsWithOverflightViewModel:overflightViewModel];
+}
+- (void)nextOverflightError:(NSError *)error {
+    [_view hideWaitForTask];
     [self handleError:error];
 }
 

@@ -10,6 +10,7 @@
 #import "NSError+BaseInteractor.h"
 #import "NSError+DeviceLocation.h"
 #import "RepositoryErrors.h"
+#import "NSError+GeoreverseDataSource.h"
 
 @implementation NSError (BaseInteractor)
 
@@ -39,6 +40,18 @@
         domainError = [NSError domainErrorWithCode:DomainErrorLocationUnknown];
     }
 
+    return domainError;
+}
+
++ (NSError *)convertToInteractorErrorFromGeoreverseError:(NSError *)georeverseError {
+    NSError *domainError = nil;
+    
+    if (georeverseError.code == GeoreverseDataSourceNotFoundError) {
+        domainError = [NSError domainErrorWithCode:DomainErrorGeoreverseNotFoundError];
+    } else {
+        domainError = [NSError domainErrorWithCode:DomainErrorUnknown];
+    }
+    
     return domainError;
 }
 

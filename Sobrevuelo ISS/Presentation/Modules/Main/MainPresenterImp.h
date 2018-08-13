@@ -8,14 +8,16 @@
 
 #import "BasePresenter.h"
 #import "MainPresenter.h"
-#import "OverflightsUseCase.h"
+#import "NextOverflightUseCase.h"
+#import "GeoreverseUseCase.h"
 #import "DeviceLocation.h"
 
 @interface MainPresenterImp : BasePresenter <MainPresenter>
 
-- (instancetype)initWithOverflightsUseCase:(id<OverflightsUseCase>)overflightsUseCase
-                            deviceLocation:(id<DeviceLocation>)deviceLocation
-                           errorTranslater:(id<ErrorTranslater>)errorTranslater
-                               messageView:(id<MessageView>)messageView;
+- (instancetype)initWithNextOverflightUseCase:(id<NextOverflightUseCase>)nextOverflightUseCase
+                            georeverseUseCase:(id<GeoreverseUseCase>)georeverseUseCase
+                               deviceLocation:(id<DeviceLocation>)deviceLocation
+                              errorTranslater:(id<ErrorTranslater>)errorTranslater
+                                  messageView:(id<MessageView>)messageView;
 
 @end
