@@ -26,14 +26,8 @@
 }
 
 - (void)fillData {
-    _duration = [self getDuration];
+    _duration = [[ServiceLocator provideTimeFormater] timeFromSeconds:_overflight.duration];
     _risetime = [[ServiceLocator provideDateFormater] dateFromTimestamp:[_overflight.risetime doubleValue]];
-}
-
-- (NSTimeInterval)getDuration {
-    NSDate *mydate = [NSDate date];
-    NSDate *dateEightHoursAhead = [mydate dateByAddingTimeInterval:[_overflight.duration doubleValue]];
-    return [dateEightHoursAhead timeIntervalSince1970];
 }
 
 @end

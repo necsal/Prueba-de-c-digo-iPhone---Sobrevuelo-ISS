@@ -10,7 +10,6 @@ def import_pods
   pod 'DeviceUtil','2.1.3'
   pod 'INTULocationManager','4.3.0'
   pod 'GoogleMaps','2.7.0'
-  pod 'MZTimerLabel','0.5.4'
 end
 
 target 'Sobrevuelo ISS' do

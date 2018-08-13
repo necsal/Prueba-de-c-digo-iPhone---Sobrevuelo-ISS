@@ -9,6 +9,7 @@
 #import "APIDataSource.h"
 #import "MainViewController.h"
 #import "DateFormater.h"
+#import "TimeFormater.h"
 
 @import UIKit;
 
@@ -18,5 +19,6 @@
 + (id<APIDataSource>)provideAPIDataSource;
 + (MainViewController *)provideMainViewController;
 + (id<DateFormater>)provideDateFormater;
++ (id<TimeFormater>)provideTimeFormater;
 
 @end

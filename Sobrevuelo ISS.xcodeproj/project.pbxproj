@@ -74,8 +74,7 @@
 		64FFDE542120C5AD00F64221 /* NextOverflightInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE522120C5AD00F64221 /* NextOverflightInteractor.m */; };
 		64FFDE582120C77B00F64221 /* NextOverflightRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE562120C77B00F64221 /* NextOverflightRequest.m */; };
 		64FFDE5B2120C85B00F64221 /* NextOverflightParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE5A2120C85B00F64221 /* NextOverflightParse.m */; };
-		64FFDE682121CD5C00F64221 /* TimerCountDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFDE652121CD5C00F64221 /* TimerCountDownView.xib */; };
-		64FFDE692121CD5C00F64221 /* TimerCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE662121CD5C00F64221 /* TimerCountDownView.m */; };
+		64FFDE6E2121DAC600F64221 /* TimeFormaterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFDE6B2121DAC600F64221 /* TimeFormaterImp.m */; };
 		9A37C32A1C1F671F00C4435C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C3291C1F671F00C4435C /* main.m */; };
 		9A37C32D1C1F671F00C4435C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A37C32C1C1F671F00C4435C /* AppDelegate.m */; };
 		9A37C3351C1F671F00C4435C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A37C3341C1F671F00C4435C /* Assets.xcassets */; };
@@ -259,9 +258,9 @@
 		64FFDE572120C77B00F64221 /* NextOverflightRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextOverflightRequest.h; sourceTree = "<group>"; };
 		64FFDE592120C85B00F64221 /* NextOverflightParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextOverflightParse.h; sourceTree = "<group>"; };
 		64FFDE5A2120C85B00F64221 /* NextOverflightParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextOverflightParse.m; sourceTree = "<group>"; };
-		64FFDE652121CD5C00F64221 /* TimerCountDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerCountDownView.xib; sourceTree = "<group>"; };
-		64FFDE662121CD5C00F64221 /* TimerCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerCountDownView.m; sourceTree = "<group>"; };
-		64FFDE672121CD5C00F64221 /* TimerCountDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerCountDownView.h; sourceTree = "<group>"; };
+		64FFDE6B2121DAC600F64221 /* TimeFormaterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeFormaterImp.m; sourceTree = "<group>"; };
+		64FFDE6C2121DAC600F64221 /* TimeFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFormater.h; sourceTree = "<group>"; };
+		64FFDE6D2121DAC600F64221 /* TimeFormaterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFormaterImp.h; sourceTree = "<group>"; };
 		892206A9F3785894E4603A98 /* Pods-Sobrevuelo ISSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sobrevuelo ISSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		95E6F06719695E7862C94A9F /* Pods_Sobrevuelo_ISS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sobrevuelo_ISS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A37C3251C1F671F00C4435C /* Sobrevuelo ISS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sobrevuelo ISS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -595,7 +594,6 @@
 		6459DA10211DD5CA004376A0 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				64FFDE642121CD5C00F64221 /* TimerCountDown */,
 				64FFDE25211F261300F64221 /* MessageView */,
 				6459DBD9211DEFC2004376A0 /* WaitView */,
 				6459DA11211DD5CA004376A0 /* ActivityLogCell */,
@@ -884,6 +882,7 @@
 		64FFDE33211F3C9B00F64221 /* Collaborators */ = {
 			isa = PBXGroup;
 			children = (
+				64FFDE6A2121DAC600F64221 /* TimeFormater */,
 				64FFDE34211F3C9B00F64221 /* DateFormater */,
 			);
 			path = Collaborators;
@@ -959,14 +958,14 @@
 			path = NextOverflight;
 			sourceTree = "<group>";
 		};
-		64FFDE642121CD5C00F64221 /* TimerCountDown */ = {
+		64FFDE6A2121DAC600F64221 /* TimeFormater */ = {
 			isa = PBXGroup;
 			children = (
-				64FFDE652121CD5C00F64221 /* TimerCountDownView.xib */,
-				64FFDE662121CD5C00F64221 /* TimerCountDownView.m */,
-				64FFDE672121CD5C00F64221 /* TimerCountDownView.h */,
+				64FFDE6C2121DAC600F64221 /* TimeFormater.h */,
+				64FFDE6D2121DAC600F64221 /* TimeFormaterImp.h */,
+				64FFDE6B2121DAC600F64221 /* TimeFormaterImp.m */,
 			);
-			path = TimerCountDown;
+			path = TimeFormater;
 			sourceTree = "<group>";
 		};
 		9A37C31C1C1F671F00C4435C = {
@@ -1187,7 +1186,6 @@
 				6459D9A6211DD4C7004376A0 /* arrow@3x.png in Resources */,
 				9A37C3351C1F671F00C4435C /* Assets.xcassets in Resources */,
 				6459D9A3211DD4C7004376A0 /* ISS_Avatar@2x.png in Resources */,
-				64FFDE682121CD5C00F64221 /* TimerCountDownView.xib in Resources */,
 				6459DC1C211EF636004376A0 /* MainViewController.xib in Resources */,
 				6459D9AC211DD54C004376A0 /* LaunchScreen.storyboard in Resources */,
 				6459D9A7211DD4C7004376A0 /* arrow.png in Resources */,
@@ -1220,7 +1218,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISS/Pods-Sobrevuelo ISS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework",
 				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
-				"${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework",
 				"${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
@@ -1230,7 +1227,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceUtil.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZTimerLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OBTRequest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrderedDictionary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
@@ -1304,7 +1300,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSUITests/Pods-Sobrevuelo ISSUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework",
 				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
-				"${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework",
 				"${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
@@ -1314,7 +1309,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceUtil.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZTimerLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OBTRequest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrderedDictionary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
@@ -1352,7 +1346,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sobrevuelo ISSTests/Pods-Sobrevuelo ISSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceUtil/DeviceUtil.framework",
 				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
-				"${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/OBTRequest/OBTRequest.framework",
 				"${BUILT_PRODUCTS_DIR}/OrderedDictionary/OrderedDictionary.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
@@ -1362,7 +1355,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceUtil.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZTimerLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OBTRequest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrderedDictionary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
@@ -1445,6 +1437,7 @@
 				6459D9D2211DD5A5004376A0 /* LocationLibraryWrapperImp.m in Sources */,
 				6459DBE2211DEFC2004376A0 /* UIViewController+WaitView.m in Sources */,
 				6459DBFE211DF28C004376A0 /* NSError+Repository.m in Sources */,
+				64FFDE6E2121DAC600F64221 /* TimeFormaterImp.m in Sources */,
 				64FFDE2A211F261300F64221 /* MessageViewImp.m in Sources */,
 				64FFDE3D211F3D0700F64221 /* SupportedLocaleImp.m in Sources */,
 				6459DA44211DE206004376A0 /* Overflight.m in Sources */,
@@ -1468,7 +1461,6 @@
 				6459DBF1211DF15D004376A0 /* BaseInteractor.m in Sources */,
 				6459DBD8211DEF04004376A0 /* LoaderMockedResponse.m in Sources */,
 				6459DBE8211DF044004376A0 /* Location.m in Sources */,
-				64FFDE692121CD5C00F64221 /* TimerCountDownView.m in Sources */,
 				64FFDE4A2120C10300F64221 /* NSError+KeyChainDataSource.m in Sources */,
 				9A37C32A1C1F671F00C4435C /* main.m in Sources */,
 				6459DBF4211DF18D004376A0 /* LocationWithAccuracy.m in Sources */,

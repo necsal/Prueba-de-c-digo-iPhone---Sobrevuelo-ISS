@@ -8,10 +8,8 @@
 
 #import "MainViewController.h"
 #import "UIViewController+ModalWaitView.h"
-#import "TimerCountDownView.h"
-#import "NSLayoutConstraint+SimpleFormatLanguage.h"
 
-@interface MainViewController () <TimerCountDownViewDelegate> {
+@interface MainViewController () {
     id<MainPresenter> _presenter;
 }
 
@@ -26,10 +24,6 @@
         [_presenter attachView:self];
     }
     return self;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLoad {
@@ -59,28 +53,8 @@
 }
 
 - (void)refreshOverflightsWithOverflightViewModel:(OverflightViewModel *)overflightViewModel {
+    _lblDuration.text = overflightViewModel.duration;
     _lblRisetime.text = overflightViewModel.risetime;
-    [self setupCountDownWithCountDownDate:overflightViewModel.duration];
-}
-- (void)setupCountDownWithCountDownDate:(NSTimeInterval)countDownDate {
-    TimerCountDownView *countDownTimerLabel = [[TimerCountDownView alloc] init];
-    countDownTimerLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [_viewContainerTimerCountDown addSubview:countDownTimerLabel];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithSimpleFormat:@[
-                   @"_viewContainerTimerCountDown.top = countDownTimerLabel.top", @"_viewContainerTimerCountDown.left = countDownTimerLabel.left",
-                   @"_viewContainerTimerCountDown.right = countDownTimerLabel.right", @"_viewContainerTimerCountDown.bottom = countDownTimerLabel.bottom"
-               ]
-                                                                      metrics:nil
-                                                                        views:NSDictionaryOfVariableBindings(countDownTimerLabel, _viewContainerTimerCountDown)]];
-
-    countDownTimerLabel.delegate = self;
-    countDownTimerLabel.fontSize = 15;
-    countDownTimerLabel.color = [UIColor blackColor];
-    countDownTimerLabel.textAlignment = NSTextAlignmentLeft;
-    [countDownTimerLabel startWithCountDownDate:countDownDate];
-}
-- (void)countDownReachZero {
-    NSLog(@"Se acabó el tiempo !!!");
 }
 
 - (void)refreshLocation:(LocationViewModel *)locationViewModel {

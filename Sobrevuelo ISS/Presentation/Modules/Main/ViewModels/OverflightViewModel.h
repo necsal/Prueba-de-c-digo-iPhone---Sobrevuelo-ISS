@@ -13,7 +13,7 @@
 
 - (instancetype)initWithOverflight:(Overflight *)overflight;
 
-@property(readonly, nonatomic) NSTimeInterval duration;
+@property(readonly, nonatomic) NSString *duration;
 @property(readonly, nonatomic) NSString *risetime;
 
 @end

@@ -29,6 +29,7 @@
 #import "GeoreverseInteractor.h"
 #import "GeoreverseDataSource.h"
 #import "GeoreverseDataSourceImp.h"
+#import "TimeFormaterImp.h"
 
 @implementation ServiceLocator
 
@@ -119,6 +120,10 @@
 
 + (id<DateFormater>)provideDateFormater {
     return [[DateFormaterImp alloc] init];
+}
+
++ (id<TimeFormater>)provideTimeFormater {
+    return [[TimeFormaterImp alloc] init];
 }
 
 @end

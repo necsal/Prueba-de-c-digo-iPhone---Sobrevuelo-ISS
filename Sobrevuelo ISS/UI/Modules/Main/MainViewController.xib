@@ -13,10 +13,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="_lblAddress" destination="qMv-AF-iHF" id="SEs-be-Jdq"/>
+                <outlet property="_lblDuration" destination="JV8-at-nmm" id="vb0-eb-Wsj"/>
                 <outlet property="_lblLocation" destination="Hr8-Kt-Lcy" id="r8m-ZY-7WW"/>
                 <outlet property="_lblRisetime" destination="VaN-Dc-qB4" id="Kv1-7w-E7K"/>
                 <outlet property="_lblTitle" destination="Xvn-Ub-PY9" id="JUH-ih-CnA"/>
-                <outlet property="_viewContainerTimerCountDown" destination="kmV-gT-WfY" id="Hb8-5l-gzU"/>
                 <outlet property="_webView" destination="6bf-zK-aaZ" id="vIj-N2-l1t"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bhO-wX-QOh"/>
             </connections>
@@ -65,27 +65,28 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmV-gT-WfY">
-                            <rect key="frame" x="163.5" y="30" width="163.5" height="18"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV8-at-nmm">
+                            <rect key="frame" x="163.5" y="39.5" width="163.5" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="kmV-gT-WfY" firstAttribute="bottom" secondItem="aO1-Fy-xGR" secondAttribute="bottom" id="1Ot-fW-9lC"/>
+                        <constraint firstItem="JV8-at-nmm" firstAttribute="width" secondItem="aO1-Fy-xGR" secondAttribute="width" id="3V2-4P-cLt"/>
                         <constraint firstItem="loI-8o-CZS" firstAttribute="top" secondItem="hXQ-Nj-Y3J" secondAttribute="top" id="3oE-OV-KUv"/>
-                        <constraint firstItem="kmV-gT-WfY" firstAttribute="leading" secondItem="aO1-Fy-xGR" secondAttribute="trailing" id="9Py-Tj-ddA"/>
-                        <constraint firstItem="kmV-gT-WfY" firstAttribute="top" secondItem="aO1-Fy-xGR" secondAttribute="top" id="E9S-Ow-sYy"/>
+                        <constraint firstItem="JV8-at-nmm" firstAttribute="centerY" secondItem="aO1-Fy-xGR" secondAttribute="centerY" id="9yB-Vs-9o0"/>
+                        <constraint firstItem="JV8-at-nmm" firstAttribute="leading" secondItem="aO1-Fy-xGR" secondAttribute="trailing" id="H3C-nW-4NY"/>
                         <constraint firstAttribute="trailing" secondItem="VaN-Dc-qB4" secondAttribute="trailing" id="HEg-34-Y6K"/>
                         <constraint firstAttribute="trailing" secondItem="VaN-Dc-qB4" secondAttribute="trailing" id="Hb8-fI-IhA"/>
-                        <constraint firstAttribute="trailing" secondItem="kmV-gT-WfY" secondAttribute="trailing" id="Mlg-Vr-kIN"/>
+                        <constraint firstAttribute="trailing" secondItem="JV8-at-nmm" secondAttribute="trailing" id="LYG-XV-1En"/>
                         <constraint firstItem="loI-8o-CZS" firstAttribute="leading" secondItem="hXQ-Nj-Y3J" secondAttribute="leading" id="SX0-sa-lCi"/>
                         <constraint firstItem="aO1-Fy-xGR" firstAttribute="top" secondItem="VaN-Dc-qB4" secondAttribute="bottom" constant="8" id="TfR-iZ-HSO"/>
                         <constraint firstItem="VaN-Dc-qB4" firstAttribute="top" secondItem="loI-8o-CZS" secondAttribute="bottom" constant="4" id="Ub6-wZ-DXv"/>
                         <constraint firstAttribute="trailing" secondItem="loI-8o-CZS" secondAttribute="trailing" id="Vuv-lE-AiJ"/>
                         <constraint firstAttribute="bottom" secondItem="aO1-Fy-xGR" secondAttribute="bottom" id="dgr-bj-5iq"/>
                         <constraint firstItem="aO1-Fy-xGR" firstAttribute="leading" secondItem="hXQ-Nj-Y3J" secondAttribute="leading" id="fh9-i7-cfh"/>
-                        <constraint firstItem="kmV-gT-WfY" firstAttribute="width" secondItem="aO1-Fy-xGR" secondAttribute="width" id="x2V-1V-XHp"/>
                         <constraint firstItem="VaN-Dc-qB4" firstAttribute="leading" secondItem="hXQ-Nj-Y3J" secondAttribute="leading" id="zel-9Q-Xkh"/>
                     </constraints>
                 </view>
